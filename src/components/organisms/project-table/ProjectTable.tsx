@@ -12,8 +12,8 @@ type Project = {
   startDate: ReactNodeOrString;
   endDate: ReactNodeOrString;
   table: {
-    description: ReactNodeOrString;
     customer: ReactNodeOrString;
+    description: ReactNodeOrString;
     "team size": ReactNodeOrString | number;
     position: ReactNodeOrString;
     responsibility: ReactNodeOrString;
@@ -29,9 +29,20 @@ export default function ProjectTable({}: Props) {
       startDate: "September 2020",
       endDate: "July 2023",
       table: {
-        description:
-          "This is a Jira plugin that allows users to easily, effectively, and clearly view planning tasks and manage resources",
         customer: "Devsamurai Viet Nam",
+        description: (
+          <ul className="list-disc list-inside">
+            <li>
+              <Typography className="inline">
+                This is a Jira plugin that allows users to easily, effectively, and clearly view planning tasks and
+                manage resources.
+              </Typography>
+            </li>
+            <li>
+              Website: <Typography>https://teamboard.cloud/proscheduler/</Typography>
+            </li>
+          </ul>
+        ),
         "team size": 4,
         position: "Team Lead",
         responsibility: (
@@ -60,12 +71,79 @@ export default function ProjectTable({}: Props) {
             <li>
               Backend:
               <ul className="list-[circle] list-inside ml-8">
-                <li>Cloud edition: ExpressJs, Postgresql</li>
-                <li>Server edition: Atlassian SDK, Java Serverless, Postgresql</li>
+                <li>Cloud edition: ExpressJs, Sequelize, Postgresql.</li>
+                <li>Server edition: Atlassian SDK, Java Serverless, Postgresql.</li>
               </ul>
             </li>
           </ul>
         ),
+      },
+    },
+    {
+      name: "Motoserve",
+      startDate: "August 2021",
+      endDate: "July 2022",
+      table: {
+        customer: "Silicon Stack Pty Ltd",
+        description: (
+          <ul className="list-disc list-inside">
+            <li>
+              <Typography className="inline">
+                This is a platform for users to book car services. Additionally, the platform also provide an admin
+                portal where users can configure their services for sale.
+              </Typography>
+            </li>
+            <li>
+              Website: <Typography>https://motorserve.com.au/</Typography>
+            </li>
+          </ul>
+        ),
+        "team size": 8,
+        position: "Senior Frontend Developer",
+        responsibility: (
+          <div>
+            <ul className="list-disc list-inside">
+              <li>Implementing responsive components based on Figma design using Ant Design v4.</li>
+              <li>Integrating APIs to visible data using SWR.</li>
+              <li>Adding Google Tag Manager and Google Analytics for SEO activities.</li>
+              <li>Code reviews.</li>
+            </ul>
+          </div>
+        ),
+        "tech stack": <Typography>NextJs, Typescript, Ant Design, Redux, Redux-Saga, Google APIs.</Typography>,
+      },
+    },
+    {
+      name: "Automundo",
+      startDate: "August 2021",
+      endDate: "July 2022",
+      table: {
+        customer: "Silicon Stack Pty Ltd",
+        description: (
+          <ul className="list-disc list-inside">
+            <li>
+              <Typography className="inline">
+                This is a platform for users to discover and bid on cars from multiple sellers. Additionally, the
+                platform also provide an admin portal where users can sell their own cars.
+              </Typography>
+            </li>
+            <li>
+              Website: <Typography>https://automundobuyscars.com.au/</Typography>
+            </li>
+          </ul>
+        ),
+        "team size": 8,
+        position: "Senior Frontend Developer",
+        responsibility: (
+          <div>
+            <ul className="list-disc list-inside">
+              <li>Implementing responsive components based on Figma design using Ant Design v4.</li>
+              <li>Integrating APIs to visible data using SWR.</li>
+              <li>Code reviews.</li>
+            </ul>
+          </div>
+        ),
+        "tech stack": <Typography>NextJs, Typescript, Ant Design, Redux, Redux-Saga.</Typography>,
       },
     },
   ];
@@ -76,14 +154,14 @@ export default function ProjectTable({}: Props) {
       <div className="h-[2px] w-full bg-black"></div>
 
       {projects.map((project, idx) => (
-        <div key={idx} className="relative overflow-x-auto my-4 flex flex-col gap-2">
+        <div key={idx} className="relative overflow-x-auto mt-4 mb-8 flex flex-col gap-2">
           <p className="text-xl">{project.name}</p>
           <p>{`( ${project.startDate} - ${project.endDate} )`}</p>
           <table className="w-full border border-gray-400 text-left">
             <tbody>
               {Object.keys(project.table).map((key, keyIdx) => (
                 <tr className="border-b border-gray-400" key={keyIdx}>
-                  <th scope="col" className="border-r border-gray-400 p-2 w-[40%] capitalize">
+                  <th scope="col" className="border-r border-gray-400 p-2 w-[25%] capitalize">
                     {key}
                   </th>
                   <td scope="col" className="border-r border-gray-400 p-2">
