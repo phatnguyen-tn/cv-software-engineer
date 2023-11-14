@@ -87,7 +87,7 @@ export default function Home() {
           <div className="my-4">
             <div className="flex justify-between items-start mb-2">
               <span className="font-bold">Silicon Stack Pty Ltd - (Outsource: DevSamurai Viet Nam)</span>
-              <span className="min-w-[25%]">Aug 2021 - Jul 2021</span>
+              <span className="min-w-[25%]">Aug 2021 - Jul 2022</span>
             </div>
             <div className="mb-2">Senior Frontend Developer</div>
             <div>
