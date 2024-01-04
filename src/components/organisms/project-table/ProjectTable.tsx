@@ -26,7 +26,7 @@ export default function ProjectTable({}: Props) {
   const projects: Project[] = [
     {
       name: "Allio Finance Application",
-      startDate: "July 2023",
+      startDate: "August 2023",
       endDate: "Present",
       table: {
         customer: "Allio Finance",
