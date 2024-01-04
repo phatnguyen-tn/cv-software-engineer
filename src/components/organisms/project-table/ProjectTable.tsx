@@ -25,6 +25,48 @@ type Project = {
 export default function ProjectTable({}: Props) {
   const projects: Project[] = [
     {
+      name: "Allio Finance Application",
+      startDate: "July 2023",
+      endDate: "Present",
+      table: {
+        customer: "Allio Finance",
+        description: (
+          <ul className="list-disc list-inside">
+            <li>
+              <Typography className="inline">
+                Allio is the only macro investing app giving strategic investors the cutting-edge tools
+              </Typography>
+            </li>
+            <li>
+              Website: <Typography>https://alliofinance.com/</Typography>
+            </li>
+          </ul>
+        ),
+        "team size": 5,
+        position: "Mobile Developer",
+        responsibility: (
+          <div>
+            <ul className="list-disc list-inside">
+              <li>Implement new features based on the Figma design, resolve bugs, and optimize existing features.</li>
+              <li>Integrate Zendesk SDK.</li>
+            </ul>
+          </div>
+        ),
+        "tech stack": (
+          <ul className="list-disc list-inside">
+            <li>Frontend: React Native, Graphql.</li>
+            <li>
+              Native Module:
+              <ul className="list-[circle] list-inside ml-8">
+                <li>Android: Java.</li>
+                <li>IOS: Object-C.</li>
+              </ul>
+            </li>
+          </ul>
+        ),
+      },
+    },
+    {
       name: "Teamboard Proscheduler",
       startDate: "September 2020",
       endDate: "July 2023",

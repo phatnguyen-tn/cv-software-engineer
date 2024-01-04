@@ -74,6 +74,14 @@ export default function Home() {
           <div className="h-[2px] w-full bg-black"></div>
           <div className="my-4">
             <div className="flex justify-between items-start mb-2">
+              <span className="font-bold">Allio Finace (Freelancer)</span>
+              <span className="min-w-[25%]">Jul 2023 - Present</span>
+            </div>
+            <div className="mb-2">Mobile Developer</div>
+            <div>Implement new features based on the Figma design, resolve bugs, and optimize existing features.</div>
+          </div>
+          <div className="my-4">
+            <div className="flex justify-between items-start mb-2">
               <span className="font-bold">DevSamurai Viet Nam</span>
               <span className="min-w-[25%]">Sep 2020 - Jul 2023</span>
             </div>
