@@ -48,13 +48,13 @@ export default function ProjectTable({}: Props) {
           <div>
             <ul className="list-disc list-inside">
               <li>Implement new features based on the Figma design, resolve bugs, and optimize existing features.</li>
-              <li>Integrate Zendesk SDK.</li>
+              <li>Integrate native module (IOS, Android): Zendesk SDK.</li>
             </ul>
           </div>
         ),
         "tech stack": (
           <ul className="list-disc list-inside">
-            <li>Frontend: React Native, Graphql.</li>
+            <li>Frontend: React Native, Typescript, GraphQL.</li>
             <li>
               Native Module:
               <ul className="list-[circle] list-inside ml-8">

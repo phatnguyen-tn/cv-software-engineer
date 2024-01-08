@@ -74,11 +74,12 @@ export default function Home() {
           <div className="h-[2px] w-full bg-black"></div>
           <div className="my-4">
             <div className="flex justify-between items-start mb-2">
-              <span className="font-bold">Allio Finace (Freelancer)</span>
+              <span className="font-bold">Allio Finace</span>
               <span className="min-w-[25%]">August 2023 - Present</span>
             </div>
             <div className="mb-2">Mobile Developer</div>
             <div>Implement new features based on the Figma design, resolve bugs, and optimize existing features.</div>
+            <div>Implement native module (IOS and Android): Zendesk SDK for support user problems.</div>
           </div>
           <div className="my-4">
             <div className="flex justify-between items-start mb-2">
@@ -105,18 +106,6 @@ export default function Home() {
             </div>
           </div>
         </article>
-        <article className="flex flex-col mt-2">
-          <h2 className="text-xl uppercase font-bold">CERTIFICATIONS</h2>
-          <div className="h-[2px] w-full bg-black"></div>
-          <div className="my-4">
-            <div className="flex justify-between items-start mb-2">
-              <span className="font-bold">Applied Social Network Analysis in Python</span>
-              <span className="min-w-[25%]">Nov 2020</span>
-            </div>
-            <div className="mb-2">Senior Frontend Developer</div>
-            <Typography>https://coursera.org/share/92b95726e51e3365350faed9cfdade5c</Typography>
-          </div>
-        </article>
 
         <article className="flex flex-col mt-2">
           <h2 className="text-xl uppercase font-bold">SKILLS</h2>
@@ -125,7 +114,7 @@ export default function Home() {
             <div className="flex justify-between items-start gap-4 mb-2 py-2 border-b-[1px]">
               <span className="font-bold">Frontend</span>
               <span className="w-[75%]">
-                ReactJs, NextJs, Typescript, Redux, Redux-Saga, MUI, Ant Design, TailwindCSS, SASS, Webpack, HTML, CSS,
+                React Native, ReactJs, NextJs, Typescript, GraphQL, Redux, Redux-Saga, MUI, TailwindCSS, SASS, Webpack,
                 ...
               </span>
             </div>
@@ -143,6 +132,19 @@ export default function Home() {
         <section>
           <ProjectTable />
         </section>
+
+        <article className="flex flex-col mt-2">
+          <h2 className="text-xl uppercase font-bold">CERTIFICATIONS</h2>
+          <div className="h-[2px] w-full bg-black"></div>
+          <div className="my-4">
+            <div className="flex justify-between items-start mb-2">
+              <span className="font-bold">Applied Social Network Analysis in Python</span>
+              <span className="min-w-[25%]">Nov 2020</span>
+            </div>
+            <div className="mb-2">Senior Frontend Developer</div>
+            <Typography>https://coursera.org/share/92b95726e51e3365350faed9cfdade5c</Typography>
+          </div>
+        </article>
       </section>
     </main>
   );
