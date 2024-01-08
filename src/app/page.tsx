@@ -78,8 +78,16 @@ export default function Home() {
               <span className="min-w-[25%]">August 2023 - Present</span>
             </div>
             <div className="mb-2">Mobile Developer</div>
-            <div>Implement new features based on the Figma design, resolve bugs, and optimize existing features.</div>
-            <div>Implement native module (IOS and Android): Zendesk SDK for support user problems.</div>
+            <ul className="list-disc list-inside">
+              <li>Working on onboarding, debit card and investing features</li>
+              <li>Optimize CI/CD pipeline and release process</li>
+              <li>
+                Improve App security: pinning, code obfuscation, app tampering, anti jailbreak/root device, keychain,
+                biometric password.
+              </li>
+              <li>Implement native module (IOS and Android): Zendesk SDK for support user problems</li>
+              <li>Resolve bugs, and optimize existing features.</li>
+            </ul>
           </div>
           <div className="my-4">
             <div className="flex justify-between items-start mb-2">

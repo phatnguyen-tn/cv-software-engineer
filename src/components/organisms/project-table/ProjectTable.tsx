@@ -47,8 +47,14 @@ export default function ProjectTable({}: Props) {
         responsibility: (
           <div>
             <ul className="list-disc list-inside">
-              <li>Implement new features based on the Figma design, resolve bugs, and optimize existing features.</li>
-              <li>Integrate native module (IOS, Android): Zendesk SDK.</li>
+              <li>Working on onboarding, debit card and investing features</li>
+              <li>Optimize CI/CD pipeline and release process</li>
+              <li>
+                Improve App security: pinning, code obfuscation, app tampering, anti jailbreak/root device, keychain,
+                biometric password.
+              </li>
+              <li>Implement native module (IOS and Android): Zendesk SDK for support user problems</li>
+              <li>Resolve bugs, and optimize existing features.</li>
             </ul>
           </div>
         ),
@@ -90,6 +96,8 @@ export default function ProjectTable({}: Props) {
         responsibility: (
           <div>
             <ul className="list-disc list-inside">
+              <li>Optimize algorithms for interactions behaviors</li>
+              <li>Implement CI/CD pipeline and release process</li>
               <li>
                 Delivering tasks to team members, code reviews, implementing new features, and performing maintenance
                 tasks to ensure the stability and functionality of the product.
@@ -145,6 +153,7 @@ export default function ProjectTable({}: Props) {
         responsibility: (
           <div>
             <ul className="list-disc list-inside">
+              <li>Implement CI/CD pipeline and release process</li>
               <li>Implementing responsive components based on Figma design using Ant Design v4.</li>
               <li>Integrating APIs to visible data using SWR.</li>
               <li>Adding Google Tag Manager and Google Analytics for SEO activities.</li>
@@ -179,6 +188,7 @@ export default function ProjectTable({}: Props) {
         responsibility: (
           <div>
             <ul className="list-disc list-inside">
+              <li>Implement CI/CD pipeline and release process</li>
               <li>Implementing responsive components based on Figma design using Ant Design v4.</li>
               <li>Integrating APIs to visible data using SWR.</li>
               <li>Code reviews.</li>
