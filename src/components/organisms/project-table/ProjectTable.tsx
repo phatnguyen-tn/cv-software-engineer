@@ -47,13 +47,9 @@ export default function ProjectTable({}: Props) {
         responsibility: (
           <div>
             <ul className="list-disc list-inside">
-              <li>Working on onboarding, debit card and investing features</li>
-              <li>Optimize CI/CD pipeline and release process</li>
-              <li>
-                Improve App security: pinning, code obfuscation, app tampering, anti jailbreak/root device, keychain,
-                biometric password.
-              </li>
-              <li>Implement native module (IOS and Android): Zendesk SDK for support user problems</li>
+              <li>Working on onboarding, and investing features.</li>
+              <li>Implement the integration of financial accounts by Plaid.</li>
+              <li>Implement native module (IOS and Android): Zendesk SDK for support user problems.</li>
               <li>Resolve bugs, and optimize existing features.</li>
             </ul>
           </div>
