@@ -102,7 +102,7 @@ export default function Home() {
                 collaboration and timely project delivery.
               </li>
               <li>Implement CI/CD pipeline and release process.</li>
-              <li>Optimize algorithms for interactions behaviors.</li>
+              <li>Optimize algorithms for interaction behaviors.</li>
             </ul>
           </div>
           <div className="my-4">
