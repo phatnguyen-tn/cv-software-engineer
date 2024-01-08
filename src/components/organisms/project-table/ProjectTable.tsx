@@ -48,7 +48,7 @@ export default function ProjectTable({}: Props) {
           <div>
             <ul className="list-disc list-inside">
               <li>Working on onboarding, and investing features.</li>
-              <li>Implement the integration of financial accounts by Plaid.</li>
+              <li>Working on the integration of financial accounts by Plaid.</li>
               <li>Implement native module (IOS and Android): Zendesk SDK for support user problems.</li>
               <li>Resolve bugs, and optimize existing features.</li>
             </ul>
