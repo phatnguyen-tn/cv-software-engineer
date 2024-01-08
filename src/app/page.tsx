@@ -95,11 +95,15 @@ export default function Home() {
               <span className="min-w-[25%]">Sep 2020 - Jul 2023</span>
             </div>
             <div className="mb-2">Web Developer</div>
-            <div>
-              Participated in code reviews, collaborated with teams, and contributed to agile development processes. My
-              ability to seamlessly transition between frontend and backend development allowed for efficient
-              collaboration and timely project delivery.
-            </div>
+            <ul className="list-disc list-inside">
+              <li>
+                Participated in code reviews, collaborated with teams, and contributed to agile development processes.
+                My ability to seamlessly transition between frontend and backend development allowed for efficient
+                collaboration and timely project delivery.
+              </li>
+              <li>Implement CI/CD pipeline and release process.</li>
+              <li>Optimize algorithms for interactions behaviors.</li>
+            </ul>
           </div>
           <div className="my-4">
             <div className="flex justify-between items-start mb-2">
@@ -107,11 +111,14 @@ export default function Home() {
               <span className="min-w-[25%]">Aug 2021 - Jul 2022</span>
             </div>
             <div className="mb-2">Senior Frontend Developer</div>
-            <div>
-              As a frontend developer, I actively participated in UI implements base on Figma, code reviews,
-              collaborated with teams, and followed agile development processes. Additionally, I implemented SEO
-              strategies to optimize website visibility and rankings.
-            </div>
+            <ul className="list-disc list-inside">
+              <li>
+                As a frontend developer, I actively participated in UI implements base on Figma, code reviews,
+                collaborated with teams, and followed agile development processes.
+              </li>
+              <li>Implement SEO strategies to optimize website visibility and rankings</li>
+              <li>Optimize CI/CD pipeline and release process.</li>
+            </ul>
           </div>
         </article>
 

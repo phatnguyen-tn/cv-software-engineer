@@ -96,8 +96,6 @@ export default function ProjectTable({}: Props) {
         responsibility: (
           <div>
             <ul className="list-disc list-inside">
-              <li>Optimize algorithms for interactions behaviors</li>
-              <li>Implement CI/CD pipeline and release process</li>
               <li>
                 Delivering tasks to team members, code reviews, implementing new features, and performing maintenance
                 tasks to ensure the stability and functionality of the product.
@@ -112,6 +110,8 @@ export default function ProjectTable({}: Props) {
                   <li>Email service</li>
                 </ul>
               </li>
+              <li>Optimize algorithms for interactions behaviors.</li>
+              <li>Implement CI/CD pipeline and release process.</li>
             </ul>
           </div>
         ),
@@ -153,11 +153,11 @@ export default function ProjectTable({}: Props) {
         responsibility: (
           <div>
             <ul className="list-disc list-inside">
-              <li>Implement CI/CD pipeline and release process</li>
               <li>Implementing responsive components based on Figma design using Ant Design v4.</li>
               <li>Integrating APIs to visible data using SWR.</li>
               <li>Adding Google Tag Manager and Google Analytics for SEO activities.</li>
               <li>Code reviews.</li>
+              <li>Optimize CI/CD pipeline and release process</li>
             </ul>
           </div>
         ),
@@ -188,10 +188,10 @@ export default function ProjectTable({}: Props) {
         responsibility: (
           <div>
             <ul className="list-disc list-inside">
-              <li>Implement CI/CD pipeline and release process</li>
               <li>Implementing responsive components based on Figma design using Ant Design v4.</li>
               <li>Integrating APIs to visible data using SWR.</li>
               <li>Code reviews.</li>
+              <li>Optimize CI/CD pipeline and release process</li>
             </ul>
           </div>
         ),
