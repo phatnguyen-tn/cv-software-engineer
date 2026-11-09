@@ -25,9 +25,91 @@ type Project = {
 export default function ProjectTable({}: Props) {
   const projects: Project[] = [
     {
-      name: "Allio Finance Application",
-      startDate: "August 2023",
+      name: "Itszai",
+      startDate: "Feb 2024",
       endDate: "Present",
+      table: {
+        customer: "TechX Vietnam",
+        description: (
+          <ul className="list-disc list-inside">
+            <li>
+              <Typography className="inline">
+                A recruitment platform that lets employers publish job postings and distribute them to Google for Jobs
+                and Indeed.
+              </Typography>
+            </li>
+            <li>Includes a website builder to create career sites from system-provided themes.</li>
+          </ul>
+        ),
+        "team size": "8 (Frontend team)",
+        position: "Mid-level Frontend Engineer",
+        responsibility: (
+          <div>
+            <ul className="list-disc list-inside">
+              <li>Developing nearly all frontend features and integrating them with the Ruby backend APIs.</li>
+              <li>Integrating job posting syndication with Google for Jobs and Indeed.</li>
+              <li>
+                Building the theme-based website builder: parsing theme templates via DOM parser with custom tags (e.g.{" "}
+                {"<editable>"}) to dynamically generate user input forms and render the final career site.
+              </li>
+              <li>Improving SEO for public pages.</li>
+              <li>Resolving bugs, optimizing existing features, and code reviews.</li>
+            </ul>
+          </div>
+        ),
+        "tech stack": (
+          <ul className="list-disc list-inside">
+            <li>Frontend: NextJs, Typescript, DOM Parser.</li>
+            <li>Backend: Ruby.</li>
+            <li>Cloud: AWS.</li>
+          </ul>
+        ),
+      },
+    },
+    {
+      name: "Easier",
+      startDate: "Feb 2024",
+      endDate: "Present",
+      table: {
+        customer: "TechX Vietnam",
+        description: (
+          <ul className="list-disc list-inside">
+            <li>
+              <Typography className="inline">
+                An advertising platform where users build their own web pages from system-provided themes and run
+                advertisements for those pages on Google Ads and Yahoo.
+              </Typography>
+            </li>
+          </ul>
+        ),
+        "team size": "8 (Frontend team)",
+        position: "Mid-level Frontend Engineer",
+        responsibility: (
+          <div>
+            <ul className="list-disc list-inside">
+              <li>Developing nearly all frontend features and integrating them with the Go backend APIs.</li>
+              <li>
+                Building the theme-based page builder, sharing the template engine with Itszai, and the flows that run
+                ads for the built pages on Google Ads and Yahoo.
+              </li>
+              <li>Improving SEO for public pages.</li>
+              <li>Resolving bugs, optimizing existing features, and code reviews.</li>
+            </ul>
+          </div>
+        ),
+        "tech stack": (
+          <ul className="list-disc list-inside">
+            <li>Frontend: NextJs, Typescript, DOM Parser.</li>
+            <li>Backend: Go.</li>
+            <li>Cloud: AWS.</li>
+          </ul>
+        ),
+      },
+    },
+    {
+      name: "Allio Finance Application",
+      startDate: "Aug 2023",
+      endDate: "Feb 2024",
       table: {
         customer: "Allio Finance",
         description: (
@@ -38,7 +120,10 @@ export default function ProjectTable({}: Props) {
               </Typography>
             </li>
             <li>
-              Website: <Typography>https://alliofinance.com/</Typography>
+              Website:{" "}
+              <a href="https://alliofinance.com/" target="_blank" className="hover:underline hover:text-sky-500">
+                https://alliofinance.com/
+              </a>
             </li>
           </ul>
         ),
@@ -98,8 +183,8 @@ export default function ProjectTable({}: Props) {
     },
     {
       name: "Teamboard Proscheduler",
-      startDate: "September 2020",
-      endDate: "July 2023",
+      startDate: "Sep 2020",
+      endDate: "Jul 2023",
       table: {
         customer: "Devsamurai Viet Nam",
         description: (
@@ -111,64 +196,58 @@ export default function ProjectTable({}: Props) {
               </Typography>
             </li>
             <li>
-              Website: <Typography>https://teamboard.cloud/proscheduler/</Typography>
+              Website:{" "}
+              <a
+                href="https://teamboard.cloud/proscheduler/"
+                target="_blank"
+                className="hover:underline hover:text-sky-500"
+              >
+                https://teamboard.cloud/proscheduler/
+              </a>
             </li>
           </ul>
         ),
         "team size": "4 (Frontend team)",
-        position: "Team Lead",
+        position: "Frontend Developer",
         responsibility: (
           <div>
             <ul className="list-disc list-inside">
               <li>
-                Delivering tasks to team members, code reviews, implementing new features, and performing maintenance
-                tasks to ensure the stability and functionality of the product.
+                Developed the main frontend features: schedule task, Gantt chart, timelog, and report, and supported
+                backend APIs for them.
               </li>
-              <li>
-                Main developer in frontend and backend for these main feature:
-                <ul className="list-[circle] list-inside ml-8">
-                  <li>Schedule task</li>
-                  <li>Gantt chart</li>
-                  <li>Timelog</li>
-                  <li>Report</li>
-                  <li>Email service</li>
-                </ul>
-              </li>
-              <li>Optimize algorithms for interactions behaviors.</li>
-              <li>Implement CI/CD pipeline and release process.</li>
+              <li>Code reviews and maintenance to keep the product stable.</li>
+              <li>Optimized algorithms for interactive behaviors.</li>
+              <li>Implemented CI/CD pipeline and release process.</li>
             </ul>
           </div>
         ),
         "tech stack": (
           <ul className="list-disc list-inside">
-            <li>Frontend: ReactJs, Redux, Redux-Saga</li>
-            <li>
-              Backend:
-              <ul className="list-[circle] list-inside ml-8">
-                <li>Cloud edition: ExpressJs, Sequelize, Postgresql.</li>
-                <li>Server edition: Atlassian SDK, Java Serverless, Postgresql.</li>
-              </ul>
-            </li>
+            <li>Frontend: ReactJs, Redux, Redux-Saga.</li>
+            <li>Backend: ExpressJs, Sequelize, Postgresql.</li>
           </ul>
         ),
       },
     },
     {
-      name: "Motoserve",
-      startDate: "August 2021",
-      endDate: "July 2022",
+      name: "Motoserve & Automundo",
+      startDate: "Aug 2021",
+      endDate: "Jul 2022",
       table: {
         customer: "Silicon Stack Pty Ltd",
         description: (
           <ul className="list-disc list-inside">
             <li>
               <Typography className="inline">
-                This is a platform for users to book car services. Additionally, the platform also provide an admin
-                portal where users can configure their services for sale.
+                Motoserve: a platform for booking car services, with an admin portal to configure services for sale.
               </Typography>
             </li>
             <li>
-              Website: <Typography>https://motorserve.com.au/</Typography>
+              <Typography className="inline">
+                Automundo: a platform to discover and bid on cars from multiple sellers, with an admin portal for
+                selling cars.
+              </Typography>
             </li>
           </ul>
         ),
@@ -178,48 +257,12 @@ export default function ProjectTable({}: Props) {
           <div>
             <ul className="list-disc list-inside">
               <li>Implementing responsive components based on Figma design using Ant Design v4.</li>
-              <li>Integrating APIs to visible data using SWR.</li>
-              <li>Adding Google Tag Manager and Google Analytics for SEO activities.</li>
-              <li>Code reviews.</li>
-              <li>Optimize CI/CD pipeline and release process</li>
+              <li>Integrating APIs using SWR, adding Google Tag Manager and Google Analytics for SEO.</li>
+              <li>Code reviews, optimizing CI/CD pipeline and release process.</li>
             </ul>
           </div>
         ),
         "tech stack": <Typography>NextJs, Typescript, Ant Design, Redux, Redux-Saga, Google APIs.</Typography>,
-      },
-    },
-    {
-      name: "Automundo",
-      startDate: "August 2021",
-      endDate: "July 2022",
-      table: {
-        customer: "Silicon Stack Pty Ltd",
-        description: (
-          <ul className="list-disc list-inside">
-            <li>
-              <Typography className="inline">
-                This is a platform for users to discover and bid on cars from multiple sellers. Additionally, the
-                platform also provide an admin portal where users can sell their own cars.
-              </Typography>
-            </li>
-            <li>
-              Website: <Typography>https://automundobuyscars.com.au/</Typography>
-            </li>
-          </ul>
-        ),
-        "team size": "8 (Frontend team)",
-        position: "Senior Frontend Developer",
-        responsibility: (
-          <div>
-            <ul className="list-disc list-inside">
-              <li>Implementing responsive components based on Figma design using Ant Design v4.</li>
-              <li>Integrating APIs to visible data using SWR.</li>
-              <li>Code reviews.</li>
-              <li>Optimize CI/CD pipeline and release process</li>
-            </ul>
-          </div>
-        ),
-        "tech stack": <Typography>NextJs, Typescript, Ant Design, Redux, Redux-Saga.</Typography>,
       },
     },
   ];

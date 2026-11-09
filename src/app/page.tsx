@@ -4,14 +4,21 @@ import { EnvelopeIcon, PhoneIcon, LinkIcon, MapPinIcon } from "@heroicons/react/
 
 export default function Home() {
   const PersonalInfo = {
-    primaryName: "",
-    secondaryName: "",
-    position: "",
     info: [
-      { icon: <PhoneIcon className="w-4 h-4" />, value: "0856127101" },
-      { icon: <EnvelopeIcon className="w-4 h-4" />, value: "ntphat.work@gmail.com" },
-      { icon: <LinkIcon className="w-4 h-4" />, value: "https://www.linkedin.com/in/phatnguyentn/" },
-      { icon: <MapPinIcon className="w-4 h-4" />, value: "District 7, Ho Chi Minh City", fullWidth: false },
+      { icon: <PhoneIcon className="w-4 h-4" />, value: "+84 856 127 101" },
+      {
+        icon: <EnvelopeIcon className="w-4 h-4" />,
+        value: "ntphat.work@gmail.com",
+      },
+      {
+        icon: <LinkIcon className="w-4 h-4" />,
+        value: "https://www.linkedin.com/in/phatnguyentn/",
+      },
+      {
+        icon: <MapPinIcon className="w-4 h-4" />,
+        value: "District 7, Ho Chi Minh City",
+        fullWidth: false,
+      },
     ],
   };
 
@@ -21,11 +28,11 @@ export default function Home() {
         <Typography variant="h1" className="text-3xl font-bold">
           NGUYEN TAN PHAT
         </Typography>
-        <Typography variant="h2">--- James Nguyen ---</Typography>
+        <Typography variant="h2">(James Nguyen)</Typography>
       </section>
 
       <Typography variant="h2" className="my-5">
-        Software Engineer
+        Software Engineer (Frontend-focused, Fullstack)
       </Typography>
 
       <section className="flex m-auto justify-center gap-x-8 gap-y-2 flex-wrap">
@@ -52,9 +59,10 @@ export default function Home() {
           <h2 className="text-xl uppercase font-bold">Objective</h2>
           <div className="h-[2px] w-full bg-black"></div>
           <Typography className="my-4">
-            I am highly motivated to advance my career as a Fullstack Engineer and am committed to developing the
-            necessary skills and expertise to become a Senior Fullstack Engineer in the near future. I am eager to take
-            on new challenges and responsibilities to continue to grow in my career.
+            Frontend-focused engineer with experience building and shipping web (Next.js, React) and mobile (React
+            Native) products across recruitment, fintech, and SaaS, and the ability to build backend services with
+            Node.js. Seeking a Fullstack or AI Engineer role where I can deliver end-to-end features, integrate
+            third-party platforms, and use AI tooling to ship faster while growing toward a Senior Engineer position.
           </Typography>
         </article>
         <article className="flex flex-col mt-2">
@@ -74,8 +82,28 @@ export default function Home() {
           <div className="h-[2px] w-full bg-black"></div>
           <div className="my-4">
             <div className="flex justify-between items-start mb-2">
+              <span className="font-bold">TechX Vietnam</span>
+              <span className="min-w-[25%]">Feb 2024 - Present</span>
+            </div>
+            <div className="mb-2">Mid-level Frontend Engineer</div>
+            <ul className="list-disc list-inside">
+              <li>
+                Owned frontend development of nearly all features for two Next.js platforms: Itszai, a recruitment
+                platform that syndicates job postings to Google for Jobs and Indeed, and Easier, an advertising platform
+                that runs ads on Google Ads and Yahoo for customer-built pages.
+              </li>
+              <li>Integrated all frontend features with Ruby (Itszai) and Go (Easier) backend APIs.</li>
+              <li>
+                Built a template-driven website builder: parsed theme templates via DOM parsing with custom tags (e.g.{" "}
+                {"<editable>"}) to generate input forms dynamically and render each customer's website.
+              </li>
+              <li>Improved SEO for public pages.</li>
+            </ul>
+          </div>
+          <div className="my-4">
+            <div className="flex justify-between items-start mb-2">
               <span className="font-bold">Allio Finance</span>
-              <span className="min-w-[25%]">August 2023 - Present</span>
+              <span className="min-w-[25%]">Aug 2023 - Feb 2024</span>
             </div>
             <div className="mb-2">Mobile Developer</div>
             <ul className="list-disc list-inside">
@@ -100,12 +128,12 @@ export default function Home() {
             <div className="mb-2">Web Developer</div>
             <ul className="list-disc list-inside">
               <li>
-                Participated in code reviews, collaborated with teams, and contributed to agile development processes.
-                My ability to seamlessly transition between frontend and backend development allowed for efficient
-                collaboration and timely project delivery.
+                Developed core features of Teamboard Proscheduler, a Jira plugin: schedule task, Gantt chart, timelog,
+                and report.
               </li>
-              <li>Implement CI/CD pipeline and release process.</li>
-              <li>Optimize algorithms for interaction behaviors.</li>
+              <li>Optimized algorithms for interactive behaviors in the planning UI.</li>
+              <li>Set up the CI/CD pipeline and release process.</li>
+              <li>Participated in code reviews and agile development processes.</li>
             </ul>
           </div>
           <div className="my-4">
@@ -115,12 +143,9 @@ export default function Home() {
             </div>
             <div className="mb-2">Senior Frontend Developer</div>
             <ul className="list-disc list-inside">
-              <li>
-                As a frontend developer, I actively participated in UI implements base on Figma, code reviews,
-                collaborated with teams, and followed agile development processes.
-              </li>
-              <li>Implement SEO strategies to optimize website visibility and rankings</li>
-              <li>Optimize CI/CD pipeline and release process.</li>
+              <li>Implemented responsive UI based on Figma for Motoserve and Automundo.</li>
+              <li>Implemented SEO strategies to improve website visibility and rankings.</li>
+              <li>Optimized the CI/CD pipeline and release process.</li>
             </ul>
           </div>
         </article>
@@ -130,19 +155,32 @@ export default function Home() {
           <div className="h-[2px] w-full bg-black"></div>
           <div className="my-4">
             <div className="flex justify-between items-start gap-4 mb-2 py-2 border-b-[1px]">
+              <span className="font-bold">Languages</span>
+              <span className="w-[75%]">Typescript, Javascript</span>
+            </div>
+            <div className="flex justify-between items-start gap-4 mb-2 py-2 border-b-[1px]">
               <span className="font-bold">Frontend</span>
-              <span className="w-[75%]">
-                React Native, ReactJs, NextJs, Typescript, GraphQL, Redux, Redux-Saga, MUI, TailwindCSS, SASS, Webpack,
-                ...
-              </span>
+              <span className="w-[75%]">ReactJs, NextJs, Redux, Redux-Saga, SWR, GraphQL, Webpack, SEO</span>
+            </div>
+            <div className="flex justify-between items-start gap-4 mb-2 py-2 border-b-[1px]">
+              <span className="font-bold">UI</span>
+              <span className="w-[75%]">Ant Design, MUI, TailwindCSS, SASS</span>
+            </div>
+            <div className="flex justify-between items-start gap-4 mb-2 py-2 border-b-[1px]">
+              <span className="font-bold">Mobile</span>
+              <span className="w-[75%]">React Native</span>
             </div>
             <div className="flex justify-between items-start gap-4 mb-2 py-2 border-b-[1px]">
               <span className="font-bold">Backend</span>
-              <span className="w-[75%]">ExpressJs, Sequelize, Postgresql, MongoDB, ...</span>
+              <span className="w-[75%]">NodeJs, ExpressJs, PostgreSQL, REST API</span>
             </div>
             <div className="flex justify-between items-start gap-4 mb-2 py-2 border-b-[1px]">
-              <span className="font-bold">Tools</span>
-              <span className="w-[75%]">Jira, Git, Github, Gitlab, Bitbucket ...</span>
+              <span className="font-bold">Cloud &amp; Tools</span>
+              <span className="w-[75%]">AWS, Git, Github, Gitlab, Bitbucket, Jira, CI/CD</span>
+            </div>
+            <div className="flex justify-between items-start gap-4 mb-2 py-2 border-b-[1px]">
+              <span className="font-bold">AI</span>
+              <span className="w-[75%]">AI-assisted development (e.g. Claude Code)</span>
             </div>
           </div>
         </article>
@@ -150,19 +188,6 @@ export default function Home() {
         <section>
           <ProjectTable />
         </section>
-
-        <article className="flex flex-col mt-2">
-          <h2 className="text-xl uppercase font-bold">CERTIFICATIONS</h2>
-          <div className="h-[2px] w-full bg-black"></div>
-          <div className="my-4">
-            <div className="flex justify-between items-start mb-2">
-              <span className="font-bold">Applied Social Network Analysis in Python</span>
-              <span className="min-w-[25%]">Nov 2020</span>
-            </div>
-            <div className="mb-2">Senior Frontend Developer</div>
-            <Typography>https://coursera.org/share/92b95726e51e3365350faed9cfdade5c</Typography>
-          </div>
-        </article>
       </section>
     </main>
   );
