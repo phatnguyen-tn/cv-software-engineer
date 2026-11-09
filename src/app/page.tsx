@@ -79,10 +79,17 @@ export default function Home() {
             </div>
             <div className="mb-2">Mobile Developer</div>
             <ul className="list-disc list-inside">
-              <li>Working on onboarding, and investing features.</li>
-              <li>Working on the integration of financial accounts by Plaid.</li>
-              <li>Implement native module (IOS and Android): Zendesk SDK for support user problems.</li>
-              <li>Resolve bugs, and optimize existing features.</li>
+              <li>
+                Built core investing features: onboarding, portfolio allocation, stock/ETF trading, recurring deposits
+                and savings goals.
+              </li>
+              <li>Main developer of the Net Worth / Wealth Tracker: net worth, spending &amp; budgets, credit score.</li>
+              <li>
+                Integrated Plaid, RevenueCat subscriptions, and Zendesk SDK via native modules (Java / Objective-C).
+              </li>
+              <li>
+                Delivered dark mode, referral program, account security flows; fixed bugs and optimized UI/UX.
+              </li>
             </ul>
           </div>
           <div className="my-4">

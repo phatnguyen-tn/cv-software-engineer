@@ -42,26 +42,54 @@ export default function ProjectTable({}: Props) {
             </li>
           </ul>
         ),
-        "team size": 5,
+        "team size": "5 (Mobile team)",
         position: "Mobile Developer",
         responsibility: (
           <div>
             <ul className="list-disc list-inside">
-              <li>Working on onboarding, and investing features.</li>
-              <li>Working on the integration of financial accounts by Plaid.</li>
-              <li>Implement native module (IOS and Android): Zendesk SDK for support user problems.</li>
-              <li>Resolve bugs, and optimize existing features.</li>
+              <li>
+                Developed and maintained core features of a React Native macro-investing app (iOS &amp; Android):
+                onboarding, portfolio allocation, stock/ETF trading (buy/sell orders, TAF fee estimation, price charts),
+                recurring deposits and savings goals.
+              </li>
+              <li>
+                Main developer of the Net Worth / Wealth Tracker: net worth charts, custom assets, spending tracker
+                (categories, recurring expenses, budgets and budget notifications), credit score and credit alerts.
+              </li>
+              <li>
+                Integrated Plaid Link to connect bank and financial accounts, manage funding sources and relink
+                institutions.
+              </li>
+              <li>
+                Integrated in-app subscriptions with RevenueCat: display plans, purchase, change, cancel and gate
+                premium screens.
+              </li>
+              <li>
+                Implemented native modules (Java for Android, Objective-C for iOS) wrapping the Zendesk SDK for in-app
+                support chat and phone-call requests.
+              </li>
+              <li>
+                Delivered app-wide dark mode, referral program, and account security flows (email/phone update with
+                verification and cooldown).
+              </li>
+              <li>
+                Fixed bugs, optimized UI/UX and performance; worked in an agile team with Jira and GitHub code reviews.
+              </li>
             </ul>
           </div>
         ),
         "tech stack": (
           <ul className="list-disc list-inside">
-            <li>Frontend: React Native, Typescript, GraphQL.</li>
+            <li>
+              Mobile: React Native, TypeScript, GraphQL (codegen), React Query, Recoil / Jotai / Zustand, React
+              Navigation, Reanimated, Victory Native / Skia (charts), Emotion.
+            </li>
+            <li>Integrations: Plaid, RevenueCat, Zendesk, Firebase, LaunchDarkly, Datadog.</li>
             <li>
               Native Module:
               <ul className="list-[circle] list-inside ml-8">
                 <li>Android: Java.</li>
-                <li>IOS: Object-C.</li>
+                <li>iOS: Objective-C.</li>
               </ul>
             </li>
           </ul>
@@ -87,7 +115,7 @@ export default function ProjectTable({}: Props) {
             </li>
           </ul>
         ),
-        "team size": 4,
+        "team size": "4 (Frontend team)",
         position: "Team Lead",
         responsibility: (
           <div>
@@ -144,7 +172,7 @@ export default function ProjectTable({}: Props) {
             </li>
           </ul>
         ),
-        "team size": 8,
+        "team size": "8 (Frontend team)",
         position: "Senior Frontend Developer",
         responsibility: (
           <div>
@@ -179,7 +207,7 @@ export default function ProjectTable({}: Props) {
             </li>
           </ul>
         ),
-        "team size": 8,
+        "team size": "8 (Frontend team)",
         position: "Senior Frontend Developer",
         responsibility: (
           <div>
